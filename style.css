@@ -1,0 +1,188 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Estilo para a linha com gradiente */
+.grupo {
+    background: linear-gradient(to right, #7aef80, #3acfd9);
+    padding: 50px 0;
+}
+
+/* Estilo para o título das categorias */
+.categoria {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os produtos */
+.produto {
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.produto .titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.produto .preco {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3acfd9;
+}
+
+/* Estilo para a seção de contato */
+#contato {
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    padding: 50px;
+    margin-bottom: 20px;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3acfd9;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #2aa6b9;
+}
+/* Estilo para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.social a {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.social a:last-of-type {
+    margin-right: 0;
+}
+
+/* Estilos responsivos */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .grupo {
+        padding: 30px 0;
+    }
+
+    .produto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produto img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    #contato {
+        padding: 30px;
+    }
+
+    .social {
+        max-width: 100%;
+    }
+}
